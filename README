@@ -1,0 +1,75 @@
+140.0.2 [2025-07-07]
+====================
+- app.normandy.enabled -> false
+- app.normandy.first_run -> false
+- app.shield.optoutstudies.enabled -> false
+- app.update.auto -> false
+- browser.aboutConfig.showWarning -> false
+- browser.cache.disk.enable -> false
+- browser.cache.memory.enable -> false
+- browser.laterrun.enabled -> false
+- browser.ml.chat.enabled -> false
+- browser.ml.enable -> false
+- browser.places.speculativeConnect.enabled -> false
+- browser.safebrowsing.allowOverride -> false
+- browser.safebrowsing.blockedURIs.enabled -> false
+- browser.safebrowsing.downloads.enabled -> false
+- browser.safebrowsing.downloads.remote.enabled -> false
+- browser.sessionstore.interval -> 120000
+- browser.sessionstore.max_tabs_undo -> 5
+- browser.sessionstore.privacy_level -> 2
+- browser.tabs.delayHidingAudioPlayingIconMS -> 0
+- browser.urlbar.speculativeConnect.enabled -> false
+- datareporting.policy.dataSubmissionEnabled -> false
+- dom.serviceWorkers.enabled -> false
+- extensions.pictureinpicture.enable_picture_in_picture_overrides -> false
+- media.navigator.enabled -> false
+- media.peerconnection.enabled -> false
+- media.videocontrols.picture-in-picture.enabled -> false
+- mousebutton.4th.enabled -> false
+- mousebutton.5th.enabled -> false
+- mousewheel.min_line_scroll_amount -> 15
+- screenshots.browser.component.enabled -> false
+- toolkit.legacyUserProfileCustomizations.stylesheets -> true
+
+- browser.contentblocking.category -> strict
+- browser.display.use_document_fonts -> 0
+- browser.newtabpage.activity-stream.feeds.topsites -> false
+- browser.newtabpage.activity-stream.showSponsoredTopSites -> false
+- browser.safebrowsing.malware.enabled -> false
+- browser.safebrowsing.phishing.enabled -> false
+- browser.startup.page -> 3
+- browser.theme.content-theme -> 0
+- browser.theme.toolbar-theme -> 0
+- browser.toolbars.bookmarks.visibility -> never
+- browser.urlbar.suggest.engines -> false
+- browser.urlbar.suggest.openpage -> false
+- browser.urlbar.suggest.quickactions -> false
+- browser.urlbar.suggest.topsites -> false
+- datareporting.healthreport.uploadEnabled -> false
+- datareporting.usage.uploadEnabled -> false
+- extensions.ui.dictionary.hidden -> true
+- extensions.ui.extension.hidden -> false
+- font.default.x-cyrillic -> sans-serif
+- font.default.x-western -> sans-serif
+- font.language.group -> x-western
+- font.minimum-size.x-cyrillic -> 13
+- font.minimum-size.x-western -> 13
+- font.name.monospace.x-cyrillic -> Source Code Pro
+- font.name.monospace.x-western -> Source Code Pro
+- font.size.monospace.x-cyrillic -> 13
+- font.size.monospace.x-western -> 13
+- network.dns.disablePrefetch -> true
+- network.predictor.enabled -> false
+- network.prefetch-next -> false
+- privacy.bounceTrackingProtection.mode -> 1
+- privacy.trackingprotection.enabled -> true
+- toolkit.telemetry.reportingpolicy.firstRun -> false
+- trailhead.firstrun.didSeeAboutWelcome -> true
+
+* userChrome.css:
+
+/* Remove close button from tabs */
+.tabbrowser-tab:not([pinned]) .tab-close-button { display:none !important; }
+
+========================================================================
